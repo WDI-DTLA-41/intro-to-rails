@@ -3,15 +3,16 @@
 # Research
 
 Break into the following groups and answer the following
-questions for your sqad.
+questions for your squad.
 
 Squad 1     | Squad 2        | Squad 3     | Squad 4
 :--         | :--            | :--         | :-- 
 __Routes__  | __Controller__ | __Model__   | __Migrations__
 Tim         | Andrew         | Kora        | Qian
-Jake        | Ritwik         | Barret      | Justin
+Jake        | Ritwik         | Barrett     | Justin
 Bao         | Michelle       | An          | Kris
-Dakota      | Brad           | Lacey       | Abi
+Dakotah     | Brad           | Lacey       | Abi
+
     
 # Routes
 
@@ -30,10 +31,16 @@ http://guides.rubyonrails.org/action_controller_overview.html
 
 - [ ] What Does a Controller Do?
 - [ ] What is Rails naming convention for controllers?
+        - To create: Capitalized first letter in singular form (Movie)
+        - Controllers are plural (MoviesController)
 - [ ] What's a controller action?
 - [ ] What does Rails do with query string parameters and POST parameters?
-- [ ] What happens if the "Content-Type" header of your request is set to "application/json"?
+        - Turns them into :keys
+- [ ] What happens if the "Content-Type" header of your request is set to "application/json"? 
 - [ ] What are filters?
+        - before, after, around
+        - before: before controller runs, call these methods
+        - after: after controller runs, call these methods
 
 # Models
 
@@ -50,9 +57,13 @@ http://guides.rubyonrails.org/active_record_migrations.html
 
 - [ ] What are migrations?
 - [ ] What's a model generator?
+        - rails g model Produce name:string desc:text
+        - Creates a migration and model
 - [ ] How do do you create a table for movies with title and year?
 - [ ] How do you run a migration?
 - [ ] How do you roll back a migration and what does it do?
+        - Undo previous migration
+        - rails db:rollback
 
 # Development
 
@@ -61,10 +72,9 @@ http://edgeguides.rubyonrails.org/api_app.html
 Squad 1 | Squad 2  | Squad 3 | Squad 4
 :--     | :--      | :--     | :-- 
 Tim     | Andrew   | Kora    | Qian
-Ritwik  | Barret   | Justin  | Jake
+Ritwik  | Barrett  | Justin  | Jake
 An      | Kris     | Boa     | Michelle
-Abi     | Dakotaa  | Brad    | Lacey
-        |          |         | 
+Abi     | Dakotah  | Brad    | Lacey
 
 Create a new Rails app called "dead_letter_app" that produces a JSON api.
 
